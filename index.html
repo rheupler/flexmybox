@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Flex My Box | Interact With Flexbox</title>
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div id="wrapper">
+
+    <div class="container">
+
+      <div id="flex-panel">
+        <h1>Flex Direction</h1>
+        <form class="flex-direction radioGroup" onClick="updateDirection()">
+          <div class="dashboard-btn">
+            <input type="radio" id="radioRow" name="flexdirection" value="row" checked="checked" />
+            <label for="radioRow">Row</label>
+          </div>
+          <div class="dashboard-btn">
+            <input type="radio" id="radioRowR" name="flexdirection" value="row-reverse" />
+            <label for="radioRowR">Row Reverse</label>
+          </div>
+          <div class="dashboard-btn">
+            <input type="radio" id="radioCol" name="flexdirection" value="column" />
+            <label for="radioCol">Column</label>
+          </div>
+          <div class="dashboard-btn">
+            <input type="radio" id="radioColR" name="flexdirection" value="column-reverse" />
+            <label for="radioColR">Col Reverse</label>
+          </div>
+        </form>
+        <h1>Justify Content</h1>
+        <form class="justify-content radioGroup" onClick="updateJustify()">
+          <div class="dashboard-btn">
+            <input type="radio" id="radioStart" name="justifyContent" value="flex-start" checked="checked" />
+            <label for="radioStart">Flex-Start</label>
+          </div>
+          <div class="dashboard-btn">
+            <input type="radio" id="radioCenter" name="justifyContent" value="center" />
+            <label for="radioCenter">Center</label>
+          </div class="dashboard-btn">
+          <div class="dashboard-btn">
+            <input type="radio" id="radioEnd" name="justifyContent" value="flex-end" />
+            <label for="radioEnd">Flex-End</label>
+          </div>
+          <div class="dashboard-btn">
+            <input type="radio" id="radioBetween" name="justifyContent" value="space-between" />
+            <label for="radioBetween">Space-Between</label>
+          </div>
+          <div class="dashboard-btn">
+            <input type="radio" id="radioAround" name="justifyContent" value="space-around" />
+            <label for="radioAround">Space-Around</label> </div>
+        </form>
+
+        <h1>Align Items</h1>
+        <form class="justify-content radioGroup" onClick="updateAlign()">
+          <div class="dashboard-btn">
+            <input type="radio" id="radioStartA" name="alignItems" value="flex-start" checked="checked" />
+            <label for="radioStartA">Flex-Start</label>
+          </div>
+          <div class="dashboard-btn">
+            <input type="radio" id="radioCenterA" name="alignItems" value="center" />
+            <label for="radioCenterA">Center</label>
+          </div>
+          <div class="dashboard-btn">
+            <input type="radio" id="radioEndA" name="alignItems" value="flex-end" />
+            <label for="radioEndA">Flex-End</label>
+          </div>
+          <div class="dashboard-btn">
+            <input type="radio" id="radioStretch" name="alignItems" value="stretch" />
+            <label for="radioStretch">Stretch</label>
+          </div>
+          <!-- <div class="dashboard-btn">
+            <input type="radio" id="radioBaseline" name="alignItems" value="baseline" />
+            <label for="radioBaseline">Baseline</label>
+          </div> -->
+        </form>
+
+
+      </div>
+
+      <div id="output-container">
+
+        <div class="flex-box" id="example1">Box 1</div>
+        <div class="flex-box" id="example2">Box 2</div>
+        <div class="flex-box" id="example3">Box 3</div>
+
+      </div>
+
+      <footer class="site-footer">
+        <p class="contact">Questions/comments send an <a href="mailto:rheupler@gmail.com?Subject=Hey%20friend" target="_top">email</a></p>
+      </footer>
+
+    </div>
+
+
+  </div>
+
+  <script src="js/scripts.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-67843919-5', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+</body>
+
+</html>
