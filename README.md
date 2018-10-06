@@ -1,4 +1,4 @@
 # flexmybox
 Interactive Flexbox cheat sheet
 
-Visit live project: [flexmybox.io](http://flexmybox.io)
+Visit live project: [rheupler.github.io/flexmybox](rheupler.github.io/flexmybox)
